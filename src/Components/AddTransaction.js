@@ -26,7 +26,10 @@ const AddTransaction = () => {
         <input 
         type="text" 
         id='text' 
-        value={text} onChange={(e) => setText(e.target.value)} placeholder='enter text...' 
+        value={text} 
+        onChange={(e) => setText(e.target.value)} 
+        placeholder='enter text...'
+        required 
         />
 
       </div>
@@ -36,10 +39,11 @@ const AddTransaction = () => {
         (Negative - Expense, Positive + Income)</label>
 
         <input 
-        type="Number" 
+        type="text" 
         id='amount'
         value={amount} onChange={(e) => setAmount(e.target.value)}
-        placeholder='enter Amount...' 
+        placeholder='enter Amount...'
+        required 
         />
         
       </div>
